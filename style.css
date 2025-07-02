@@ -30,8 +30,20 @@ header.nav-bar {
   background-color: #000;
 }
 
-.logo img {
+.logo-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-name img {
   height: 40px;
+}
+
+.logo-name span {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .nav-links a {
@@ -65,7 +77,7 @@ header.nav-bar {
 }
 
 .right-side {
-  border-left: 1px solid #ddd;  /* optional subtle divider */
+  border-left: 1px solid #ddd;
 }
 
 .identity h1 {
@@ -111,3 +123,4 @@ header.nav-bar {
   list-style-type: disc;
   margin-left: 1.5rem;
 }
+
