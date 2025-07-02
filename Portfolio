@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sruthi Bommareddy | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="content">
+        <h1>Sruthi Bommareddy</h1>
+        <p>People-Centric | Human-Machine Synergy</p>
+        <p>PhD in I/O Psychology & Human Factors</p>
+        <a href="#" class="button">Download CV</a>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="content">
+        <h2>Analytics | Projects | Code</h2>
+        <ul>
+          <li><a href="#">Game-Based Assessments</a></li>
+          <li><a href="#">People Analytics Models</a></li>
+          <li><a href="#">Machine Learning Portfolio</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
