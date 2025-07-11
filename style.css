@@ -28,6 +28,7 @@ header.nav-bar {
   justify-content: space-between;
   align-items: center;
   background-color: #000;
+  z-index: 999;
 }
 
 .logo-name {
@@ -38,6 +39,8 @@ header.nav-bar {
 
 .logo-name img {
   height: 40px;
+  width: auto;
+  display: inline-block;
 }
 
 .logo-name span {
@@ -46,6 +49,7 @@ header.nav-bar {
   font-weight: 600;
 }
 
+/* ---------- Navigation links ---------- */
 .nav-links a {
   margin-left: 20px;
   color: #fff;
@@ -123,4 +127,3 @@ header.nav-bar {
   list-style-type: disc;
   margin-left: 1.5rem;
 }
-
