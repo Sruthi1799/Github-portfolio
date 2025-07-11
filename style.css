@@ -69,54 +69,68 @@ header.nav-bar {
   margin-top: 70px;
 }
 
-/* ---------- Left Side: Organizational Scientist ---------- */
-.left-side.human-theme {
+.left-side,
+.right-side {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  color: #111;
+  transition: background-color 0.3s ease;
+}
+
+/* Left - Human-Centric */
+.left-side {
   background-color: #fef6f2;
-  color: #6a3e36;
-  text-align: center;
 }
 
-.left-side .identity h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #6a3e36;
-}
-
+.left-side .identity h1,
 .left-side .identity p {
-  margin-top: 10px;
-  font-size: 1.1rem;
   color: #6a3e36;
 }
 
-/* ---------- Right Side: Analytics Storyteller ---------- */
-.right-side.data-theme {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
+/* Right - Data/Analytics Aesthetic */
+.right-side {
   background-color: #f4f8ff;
   border-left: 1px solid #ddd;
-  color: #1a1a1a;
   font-family: 'Courier New', monospace;
-  text-align: center;
 }
 
 .right-side .right-content h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
   color: #1a1a1a;
+  font-size: 2.5rem;
 }
 
-.right-side .identity p {
-  font-size: 1rem;
+.right-side .right-content p {
   color: #3b3b3b;
+  font-size: 1rem;
+}
+
+/* ---------- Identity Content ---------- */
+.identity h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.identity p {
   margin-top: 10px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.right-content {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.title span {
+  color: #ff6600;
+  padding: 0 10px;
+  font-weight: 400;
 }
 
 /* ---------- Section layout ---------- */
@@ -135,23 +149,13 @@ header.nav-bar {
   color: #222;
 }
 
-.section p,
-.section ul {
-  font-size: 1.1rem;
-  line-height: 1.6;
-}
-
-.section ul {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-}
-
 /* ---------- Project Gallery Grid ---------- */
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .project-card {
@@ -161,6 +165,9 @@ header.nav-bar {
   padding: 1.5rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project-card:hover {
@@ -171,14 +178,14 @@ header.nav-bar {
 .project-card h3 {
   font-size: 1.3rem;
   color: #111;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .project-card p {
   color: #555;
   font-size: 1rem;
-  margin-bottom: 1rem;
-  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
 }
 
 .project-card a {
@@ -189,4 +196,28 @@ header.nav-bar {
 
 .project-card a:hover {
   text-decoration: underline;
+}
+
+/* ---------- Tags Styling ---------- */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.tag:hover {
+  background-color: #d2d2d2;
 }
