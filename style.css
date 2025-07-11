@@ -1,4 +1,4 @@
-/* ---------- Base reset & typography ---------- */
+/* ---------- Base Reset & Typography ---------- */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,6 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* ---------- Global layout ---------- */
 html {
   scroll-behavior: smooth;
 }
@@ -15,9 +14,10 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background-color: #fff;
+  color: #111;
 }
 
-/* ---------- Top navigation ---------- */
+/* ---------- Navigation Bar ---------- */
 header.nav-bar {
   position: absolute;
   width: 100%;
@@ -40,7 +40,6 @@ header.nav-bar {
 .logo-name img {
   height: 40px;
   width: auto;
-  display: inline-block;
 }
 
 .logo-name span {
@@ -49,7 +48,6 @@ header.nav-bar {
   font-weight: 600;
 }
 
-/* ---------- Navigation links ---------- */
 .nav-links a {
   margin-left: 20px;
   color: #fff;
@@ -62,7 +60,7 @@ header.nav-bar {
   text-decoration: underline;
 }
 
-/* ---------- Split hero layout ---------- */
+/* ---------- Hero Split Layout ---------- */
 .split-layout {
   display: flex;
   min-height: 100vh;
@@ -76,41 +74,23 @@ header.nav-bar {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  color: #111;
   transition: background-color 0.3s ease;
 }
 
-/* Left - Human-Centric */
 .left-side {
   background-color: #fef6f2;
 }
 
-.left-side .identity h1,
-.left-side .identity p {
-  color: #6a3e36;
-}
-
-/* Right - Data/Analytics Aesthetic */
 .right-side {
   background-color: #f4f8ff;
   border-left: 1px solid #ddd;
   font-family: 'Courier New', monospace;
 }
 
-.right-side .right-content h2 {
-  color: #1a1a1a;
-  font-size: 2.5rem;
-}
-
-.right-side .right-content p {
-  color: #3b3b3b;
-  font-size: 1rem;
-}
-
-/* ---------- Identity Content ---------- */
 .identity h1 {
   font-size: 2.5rem;
   font-weight: bold;
+  color: #6a3e36;
 }
 
 .identity p {
@@ -123,6 +103,17 @@ header.nav-bar {
   text-align: center;
 }
 
+.right-content h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+}
+
+.right-content p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #3b3b3b;
+}
+
 .title {
   font-size: 2.5rem;
 }
@@ -133,13 +124,12 @@ header.nav-bar {
   font-weight: 400;
 }
 
-/* ---------- Section layout ---------- */
+/* ---------- Section Layout ---------- */
 .section {
   padding: 4rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
   background-color: #fff;
-  color: #111;
 }
 
 .section h2 {
@@ -184,7 +174,7 @@ header.nav-bar {
 .project-card p {
   color: #555;
   font-size: 1rem;
-  margin-bottom: 1.2rem;
+  margin: 0.75rem 0 1rem;
   line-height: 1.5;
 }
 
@@ -192,6 +182,7 @@ header.nav-bar {
   color: #007bff;
   font-weight: 600;
   text-decoration: none;
+  margin-top: auto;
 }
 
 .project-card a:hover {
@@ -203,7 +194,8 @@ header.nav-bar {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .tag {
@@ -220,4 +212,41 @@ header.nav-bar {
 
 .tag:hover {
   background-color: #d2d2d2;
+}
+
+/* ---------- Contact Section ---------- */
+#contact {
+  text-align: center;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+#contact a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Responsive Adjustments ---------- */
+@media (max-width: 768px) {
+  .split-layout {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    border: none;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+  }
 }
