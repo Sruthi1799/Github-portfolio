@@ -69,68 +69,53 @@ header.nav-bar {
   margin-top: 70px;
 }
 
-.left-side,
-.right-side {
+/* ---------- Left Side: Organizational Scientist ---------- */
+.left-side.human-theme {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  color: #111;
-  transition: background-color 0.3s ease;
-}
-
-/* Left - Human-Centric */
-.left-side {
   background-color: #fef6f2;
-}
-
-.left-side .identity h1,
-.left-side .identity p {
   color: #6a3e36;
-}
-
-/* Right - Data/Analytics Aesthetic */
-.right-side {
-  background-color: #f4f8ff;
-  border-left: 1px solid #ddd;
-  font-family: 'Courier New', monospace;
-}
-
-.right-side .right-content h2 {
-  color: #1a1a1a;
-  font-size: 2.5rem;
-}
-
-.right-side .right-content p {
-  color: #3b3b3b;
-  font-size: 1rem;
-}
-
-/* ---------- Identity Content ---------- */
-.identity h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.identity p {
-  margin-top: 10px;
-  font-size: 1.1rem;
-  color: #444;
-}
-
-.right-content {
   text-align: center;
 }
 
-.title {
+.left-side .identity h1 {
   font-size: 2.5rem;
+  font-weight: bold;
+  color: #6a3e36;
 }
 
-.title span {
-  color: #ff6600;
-  padding: 0 10px;
-  font-weight: 400;
+.left-side .identity p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #6a3e36;
+}
+
+/* ---------- Right Side: Analytics Storyteller ---------- */
+.right-side.data-theme {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f4f8ff;
+  border-left: 1px solid #ddd;
+  color: #1a1a1a;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+}
+
+.right-side .right-content h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+}
+
+.right-side .right-content p {
+  font-size: 1rem;
+  color: #3b3b3b;
+  margin-top: 10px;
 }
 
 /* ---------- Section layout ---------- */
@@ -147,6 +132,17 @@ header.nav-bar {
   margin-bottom: 2rem;
   text-align: center;
   color: #222;
+}
+
+.section p,
+.section ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.section ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
 }
 
 /* ---------- Project Gallery Grid ---------- */
