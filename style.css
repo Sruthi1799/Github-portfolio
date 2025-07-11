@@ -76,14 +76,38 @@ header.nav-bar {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background-color: #fff;
   color: #111;
+  transition: background-color 0.3s ease;
 }
 
+/* Left - Human-Centric */
+.left-side {
+  background-color: #fef6f2;
+}
+
+.left-side .identity h1,
+.left-side .identity p {
+  color: #6a3e36;
+}
+
+/* Right - Data/Analytics Aesthetic */
 .right-side {
+  background-color: #f4f8ff;
   border-left: 1px solid #ddd;
+  font-family: 'Courier New', monospace;
 }
 
+.right-side .right-content h2 {
+  color: #1a1a1a;
+  font-size: 2.5rem;
+}
+
+.right-side .right-content p {
+  color: #3b3b3b;
+  font-size: 1rem;
+}
+
+/* ---------- Identity Content ---------- */
 .identity h1 {
   font-size: 2.5rem;
   font-weight: bold;
