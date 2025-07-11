@@ -109,10 +109,11 @@ header.nav-bar {
 
 .right-side .right-content h2 {
   font-size: 2.5rem;
+  font-weight: bold;
   color: #1a1a1a;
 }
 
-.right-side .right-content p {
+.right-side .identity p {
   font-size: 1rem;
   color: #3b3b3b;
   margin-top: 10px;
